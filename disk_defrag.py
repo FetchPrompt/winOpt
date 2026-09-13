@@ -6,8 +6,11 @@ def disk_defrag():
 HDD or SSD?:
 [1] HDD
 [2] SSD
+[0] Exit
 """)
     disk_defrag_input = input("Enter an option: ").lower().strip()
+    if disk_defrag_input == "0":
+        return
     c_or_d = input("Enter a letter of your disk (ex. C, D): ").lower().strip()
     if disk_defrag_input == "1":
         try:

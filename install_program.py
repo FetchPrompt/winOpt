@@ -1,5 +1,6 @@
 import subprocess
 from clear import clear
+from ascii import greets, ascii_banner
 
 apps = {
     "1": ("Google Chrome", "Google.Chrome"),
@@ -74,10 +75,12 @@ Choose an app to install:
 [0] Exit
 """
     clear()
+    print(ascii_banner)
+    print(greets)
     print(app_selector)
     app_selected = input("Enter an option: ").strip().lower()
     if app_selected == "0":
-        input("Press ENTER to go back...")
+        return
 
     if app_selected in apps:
         app_name, package_id = apps[app_selected]

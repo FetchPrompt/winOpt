@@ -4,6 +4,7 @@ from power_plan import power_plan
 from clear_cache import clear_cache
 from disk_defrag import disk_defrag
 from install_program import app_selection
+from ascii import greets, ascii_banner
 import sys
 import time
 import ctypes
@@ -21,20 +22,6 @@ if not is_admin():
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-greets = """
-winOpt v0.5.2-alpha.1
-Project made by Stefan Aničić aka FetchPrompt
-This program may not be compatible with all Windows computers! (JUST A PROTOTYPE, DO AT YOUR OWN RISK)
-"""
-
-ascii_banner = """
-██╗    ██╗██╗███╗   ██╗ ██████╗ ██████╗ ████████╗
-██║    ██║██║████╗  ██║██╔═══██╗██╔══██╗╚══██╔══╝
-██║ █╗ ██║██║██╔██╗ ██║██║   ██║██████╔╝   ██║   
-██║███╗██║██║██║╚██╗██║██║   ██║██╔═══╝    ██║   
-╚███╔███╔╝██║██║ ╚████║╚██████╔╝██║        ██║   
- ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝        ╚═╝   """
-
 def main_menu():
     while True:
             clear()
@@ -45,26 +32,43 @@ Select an option:
 [1] System Info
 [2] Change Power Plan
 [3] Disk defrag
-[4] Install Drivers (AT YOUR OWN RISK!!!)
+[4] Install Drivers (Coming Soon)
 [5] Install programs
-[6] Clear cache
+[6] Network Reset
+[7] Clear cache
 [0] Exit""")
             print(" ")
             main_menu_input = input("Enter your choice: ").strip().lower()
             if main_menu_input == "1":
                 clear()
+                print(ascii_banner)
+                print(greets)
                 system_info()
             elif main_menu_input == "2":
                 clear()
+                print(ascii_banner)
+                print(greets)
                 power_plan()
             elif main_menu_input == "3":
                 clear()
+                print(ascii_banner)
+                print(greets)
                 disk_defrag()
+            elif main_menu_input == "4":
+                clear()
+                print(ascii_banner)
+                print(greets)
+                print("Currently not available. COMING SOON!")
+                input("Press ENTER to go back...")
             elif main_menu_input == "5":
                 clear()
+                print(ascii_banner)
+                print(greets)
                 app_selection()
             elif main_menu_input == "6":
                 clear()
+                print(ascii_banner)
+                print(greets)
                 clear_cache()
             elif main_menu_input == "0":
                 break
