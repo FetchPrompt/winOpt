@@ -232,7 +232,7 @@ Modification and redistribution of modified or derivative versions are not permi
 
 ## Author
 
-Developed and maintained by [aniciccstefan].
+Developed and maintained by [FetchPrompt](https://www.github.com/FetchPrompt).
 
 
 © 2026 Stefan Aničić. All rights reserved.
