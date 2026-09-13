@@ -22,8 +22,8 @@ if not is_admin():
 sys.stdout.reconfigure(encoding='utf-8')
 
 greets = """
-winOpt v0.5.1-alpha.1
-Project made by Stefan Aničić aka aniciccstefan
+winOpt v0.5.2-alpha.1
+Project made by Stefan Aničić aka FetchPrompt
 This program may not be compatible with all Windows computers! (JUST A PROTOTYPE, DO AT YOUR OWN RISK)
 """
 

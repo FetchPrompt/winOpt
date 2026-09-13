@@ -6,17 +6,22 @@ apps = {
     "2": ("Steam", "Valve.Steam"),
     "3": ("OBS Studio", "OBSProject.OBSStudio"),
     "4": ("Discord", "Discord.Discord"),
-    "5": ("Visual Studio Code", "Microsoft.VisualStudioCode"),
-    "6": ("Spotify", "Spotify.Spotify"),
-    "7": ("VLC Player", "VideoLAN.VLC"),
-    "8": ("InkScape", "Inkscape.Inkscape"),
-    "9": ("Audacity", "Audacity.Audacity"),
-    "10": ("uTorrent", "BitTorrent.uTorrent"),
-    "11": ("Git", "Git.Git"),
-    "12": ("GIMP", "GIMP.GIMP"),
-    "13": ("Krita", "Krita.Krita"),
-    "14": ("WhatsApp", "WhatsApp.WhatsApp"),
-    "15": ("7Zip", "7zip.7zip")
+    "5": ("Tor Browser", "TorProject.TorBrowser"),
+    "6": ("Firefox", "Mozilla.Firefox"),
+    "7": ("Brave", "Brave.Brave"),
+    "8": ("Visual Studio Code", "Microsoft.VisualStudioCode"),
+    "9": ("Vim", "vim.vim"),
+    "10": ("Neovim", "Neovim.Neovim"),
+    "11": ("Spotify", "Spotify.Spotify"),
+    "12": ("VLC Player", "VideoLAN.VLC"),
+    "13": ("InkScape", "Inkscape.Inkscape"),
+    "14": ("Audacity", "Audacity.Audacity"),
+    "15": ("uTorrent", "BitTorrent.uTorrent"),
+    "16": ("Git", "Git.Git"),
+    "17": ("GIMP", "GIMP.GIMP"),
+    "18": ("Krita", "Krita.Krita"),
+    "19": ("WhatsApp", "WhatsApp.WhatsApp"),
+    "20": ("7Zip", "7zip.7zip")
 }
 
 def install_program(package_id):
@@ -50,17 +55,22 @@ Choose an app to install:
 [2] Steam
 [3] OBS Studio
 [4] Discord
-[5] Visual Studio Code
-[6] Spotify
-[7] VLC Player
-[8] InkScape
-[9] Audacity
-[10] uTorrent
-[11] Git
-[12] GIMP
-[13] Krita
-[14] WhatsApp
-[15] 7Zip
+[5] Tor Browser
+[6] Firefox
+[7] Brave
+[8] Visual Studio Code
+[9] Vim
+[10] NeoVim
+[11] Spotify
+[12] VLC Player
+[13] InkScape
+[14] Audacity
+[15] uTorrent
+[16] Git
+[17] GIMP
+[18] Krita
+[19] WhatsApp
+[20] 7Zip
 [0] Exit
 """
     clear()
