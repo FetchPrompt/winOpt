@@ -4,6 +4,7 @@ from power_plan import power_plan
 from clear_cache import clear_cache
 from disk_defrag import disk_defrag
 from install_program import app_selection
+from network_reset import network_reset
 from ascii import greets, ascii_banner
 import sys
 import time
@@ -69,7 +70,7 @@ Select an option:
                 clear()
                 print(ascii_banner)
                 print(greets)
-                clear_cache()
+                network_reset()
             elif main_menu_input == "0":
                 break
             else:
